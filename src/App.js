@@ -6,6 +6,8 @@ import MainHeader from './components/MainHeader/MainHeader';
 
 function App()
 {
+  const loginStatus = localStorage.getItem('isLoggedIn')
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loginHandler = (email, password) =>
